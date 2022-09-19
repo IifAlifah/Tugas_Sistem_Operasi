@@ -1,16 +1,8 @@
-<center><h2><b>MODERN</b></h2>
-<h2><b>OPERATING SYSTEMS</b></h2>
-<h3><b>FOURTH EDITION</b></h3>
-<h3>ANDREW S. TANENBAUM</h3>
-<h3>AHERBERT BOS</h3>
-<h3><i><b>Vrije Universiteit</b></i></h3>
-<h3><i>Amsterdam, The Netherlands</i></h3></center>
+<h2><b>MODERN OPERATING SYSTEMS</b></h2>
+<br>
 
-#
-<center><h2><b> 1 </b></h2>
-<h2><b>INTRODUCTIONS</b></h2></center>
-
-#
+<h2><b> 1 </b></h2>
+<h2><b>INTRODUCTIONS</b></h2>
 
 A modern computer consists of one or more processors, some main memory, disks, printers, a keyboard, a mouse, a display network interfaces, and various other input/output devices. All in all, a complex system.oo If every application programmer had to understand how all these things work in detail, no code would ever get written. Furthermore, managing all these components and using them optimally is an exceedingly challenging job. For this reason, computers are equipped with a layer of software called the **operating system**, whose job is to provide user programs with a better, simpler, cleaner, model of the computer and to handle managing all the resources just mentioned. Operating systems are the subject of thisbook.
 
@@ -18,7 +10,9 @@ Most readers will have had some experience with an operating system such as Wind
 
 A simple overview of the main components under discussion here is given in Fig. 1-1. Here we see the hardware at the bottom. The hardware consists of chips, boards, disks, a keyboard, a monitor, and similar physical objects. On top of the hardware is the software. Most computers have two modes of operation: kernel mode and user mode. The operating system, the most fundamental piece of software, runs in **kernel mode** (also called **supervisor mode**). In this mode it has complete access to all the hardware and can execute any instruction the machine is capable of executing. The rest of the software runs in user mode, in which only a subset of the machine instructions is available. In particular, those instructions that affect control of the machine or do **I/O )Input**/Output" are forbidden to user-mode programs. We will come back to the difference between kernel mode and user mode repeatedly throughout this book. It plays a crucial role in how operating systems work.
 
+
 <center><img src="img/gambar1.jpeg"></center>
+
 
 The user interface program, shell or GUI, is the lowest level of user-mode software, and allows the user to start other programs, such as a Web browser, email reader, or music player. These programs, too, make heavy use of the operating system.
 
@@ -99,7 +93,7 @@ real computing. This situation is shown in Fig. 1-3.
 
 After about an hour of collecting a batch of jobs, the cards were read onto a magnetic tape, which was carried into the machine room, where it was mounted on a tape drive. The operator then loaded a special program (the ancestor of today’s operating system), which read the first job from tape and ran it. The output was written onto a second tape, instead of being printed. After each job finished, the operating system automatically read the next job from the tape and began running
 
-<center><img src="gambar3.jpeg"></center>
+<center><img src="img/gambar3.jpeg"></center>
 
 it. When the whole batch was done, the operator removed the input and output tapes, replaced the input tape with the next batch, and brought the output tape to a 1401 for printing off line (i.e., not connected to the main computer).
 
